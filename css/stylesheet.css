@@ -1,8 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans:900|Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans:900|Open+Sans:300');
 html, body{
     height:100%;
+    font-family: 'Open Sans', sans-serif;
 }
 /*Navigation*/
+.navbar {
+    color: white;
+    background-color: #333;
+}
+
+.navbar .navbar-brand {
+    color: #eee;
+    font-weight: 600;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.navbar-toggler {
+	color: white;
+	font-size: 18px;
+	border-radius: 2px;
+	vertical-align: middle;
+}
+
+.nav-item a{
+    color: #eee;
+}
+
 #intro {
 	display: table;
 	width: 100%;
@@ -44,41 +67,4 @@ h1 {
 
 h2 {
     font-family: 'Open Sans', sans-serif;
-}
-
-
-nav li {
-    display: inline;
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-}
-
-nav ul{
-    margin: 0px;
-    padding-top: .5rem;
-}
-
-
-
-input {
-    font-size: 1rem;
-    padding: .5rem;
-    vertical-align: bottom;
-}
-
-i {
-    font-size: 1.5rem;
-    padding: .3rem;
-}
-
-a:hover, a:focus, a:active {
-    color: #b7a57a;
-    border-bottom: .6rem solid #b7a57a;
 }
