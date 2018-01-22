@@ -42,8 +42,8 @@ html, body{
 
 
 .logo {
+    width: 70px;
     padding:0 1em;
-    background-image: url('../img/icon-white.png');
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
