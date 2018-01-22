@@ -3,6 +3,7 @@ html, body{
     height:100%;
     font-family: 'Open Sans', sans-serif;
 }
+
 /*Navigation*/
 .navbar {
     color: white;
@@ -10,14 +11,16 @@ html, body{
 }
 
 .navbar .navbar-brand {
-    color: #eee;
+    color: white;
     font-weight: 600;
     font-family: 'Encode Sans', sans-serif;
+    text-shadow: 2px 2px #333;
 }
 
 .navbar-toggler {
+    float: right;
 	color: white;
-	font-size: 18px;
+	font-size: 30px;
 	border-radius: 2px;
 	vertical-align: middle;
 }
@@ -25,6 +28,21 @@ html, body{
 .nav-item a{
     color: #eee;
 }
+
+.fa-bars {
+    padding-top: 0.43rem;
+}
+
+
+.logo {
+    padding:0 1em;
+    background-image: url('../img/icon-white.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*Intro*/
 
 #intro {
 	display: table;
@@ -46,13 +64,42 @@ html, body{
 #intro .intro-body H1 {
 	font-size: 76px;
     font-weight: 700;
+    text-shadow: 2px 2px #333;
     color: white;
 }
 
+#intro .intro-body p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.btn {
+    font-weight: 900;
+    font-family: 'Encode Sans', sans-serif;
+    color: #eee;
+	border: 0;
+	padding: 12px 24px;
+	margin: 0 8px;
+	font-size: 20px;
+    transition: all 0.5s;
+    box-shadow: 5px 6px #333;
+}
+
+/*Body*/
 
 body {
-   color: #535353;
-   font-family: 'Open Sans', sans-serif;
+    color: #535353;
+    font-family: 'Open Sans', sans-serif;
+} 
+
+
+main img {
+    width: 100%;
+    padding: 0 0 2rem;
+}
+.col-sm-auto img {
+    width: 80vw;
+    vertical-align: middle;
 }
 
 h1,h2 {
@@ -63,8 +110,34 @@ h1,h2 {
 h1 {
     font-family: 'Encode Sans', sans-serif;
     font-size: 2.5rem;
+    padding: 5rem 0 0;
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.sec {
+    background: url(../img/intro.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+.sec h1, .sec h2, .sec p {
+    color: white;
+    text-shadow: 2px 2px #333;
+}
+.row {
+    padding: 0 10%;
+}
+
+/*Responsive*/
+
+@media (min-width: 992px) {
+    .col-sm-auto img {
+        width: 35vw;
+    }
+
 }
